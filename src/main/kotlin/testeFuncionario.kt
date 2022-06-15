@@ -1,5 +1,5 @@
 fun testeFuncionario() {
-    val higor = Funcionario(nome = "Higor", cpf = "111.111.111-11", salario = 5500.0)
+    val higor = Analista(nome = "Higor", cpf = "111.111.111-11", salario = 5500.0)
     println("nome funcionario ${higor.nome}")
     println("cpf funcionario ${higor.cpf}")
     println("salario ${higor.salario}")

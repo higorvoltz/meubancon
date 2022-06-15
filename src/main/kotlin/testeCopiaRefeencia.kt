@@ -1,11 +1,11 @@
 fun testeCopiaRefeencia() {
-    val contaHigor = Conta("Higor", 1000)
+    val contaHigor = ContaCorrente("Higor", 1000)
     contaHigor.deposita(10000.0)
     println(contaHigor.titular)
     println(contaHigor.numero)
     println(contaHigor.saldo)
 
-    val contaSandra = Conta("Sandra", 1001)
+    val contaSandra = ContaPoupanca("Sandra", 1001)
     contaSandra.deposita(2000.0)
     println(contaSandra.titular)
     println(contaSandra.numero)
@@ -18,7 +18,7 @@ fun testeCopiaRefeencia() {
     println("numeroX $numeroX")
     println("numeroY $numeroY")
 
-    val contaJoao = Conta("João", 1002)
+    val contaJoao = ContaCorrente("João", 1002)
     //contaJoao.titular = "João"
 
     var contaMaria = contaJoao

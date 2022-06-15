@@ -1,6 +1,6 @@
 fun testeComportamentoFuncao() {
     println("depositando conta Higor")
-    val contaHigor = Conta(titular = "Higor", numero = 100)
+    val contaHigor = ContaCorrente(titular = "Higor", numero = 100)
     println("saldo anterior ${contaHigor.saldo}")
     //contaHigor.saldo += 100.0
     contaHigor.deposita(100.0)
@@ -16,7 +16,7 @@ fun testeComportamentoFuncao() {
     println()
 
     println("depositando conta Sandra")
-    val contaSandra = Conta("Sandra", 1001)
+    val contaSandra = ContaPoupanca("Sandra", 1001)
     println("saldo anterior ${contaSandra.saldo}")
     //contaSandra.saldo += 50.0
     contaSandra.deposita(50.0)
