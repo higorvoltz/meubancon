@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db26a830-7767-4ba9-9966-54bc312b567e" name="Changes" comment="teste funcionario">
+    <list default="true" id="db26a830-7767-4ba9-9966-54bc312b567e" name="Changes" comment="implementa autenticacao, herança">
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/Autenticavel.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/Auxiliar.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cliente.kt" afterDir="false" />
@@ -114,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655296315015</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implementa autenticacao, herança">
+      <created>1655321699347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655321699347</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +139,7 @@
     <MESSAGE value="subindo" />
     <MESSAGE value="subindo v2" />
     <MESSAGE value="teste funcionario" />
-    <option name="LAST_COMMIT_MESSAGE" value="teste funcionario" />
+    <MESSAGE value="implementa autenticacao, herança" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementa autenticacao, herança" />
   </component>
 </project>
