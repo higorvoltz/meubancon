@@ -1,6 +1,11 @@
+import br.com.modelo.*
+
 fun testeComportamentoFuncao() {
     println("depositando conta Higor")
-    val contaHigor = ContaCorrente(titular = "Higor", numero = 100)
+    val contatoHigor = Contato(telefoneFixo = "", telefoneCelular = "98888-8888", email = "e@email.com")
+    val enderecoHigor = Endereco(logradouro = "ZZ", numero = 444, complemento = null, cep = "", bairro = "", cidade = "", estado = "", pais = "")
+    val higor = Cliente(nome= "Higor", cpf = "111.111.111-11", senha = 1111, enderecoHigor, contatoHigor)
+    val contaHigor = ContaCorrente(higor, numero = 100)
     println("saldo anterior ${contaHigor.saldo}")
     //contaHigor.saldo += 100.0
     contaHigor.deposita(100.0)
@@ -15,8 +20,11 @@ fun testeComportamentoFuncao() {
 
     println()
 
+    val contatoSandra = Contato(telefoneFixo = "", telefoneCelular = "97777-8888", email = "mail@email.com")
+    val enderecoSandra = Endereco(logradouro = "ZZZ", numero = 0, complemento = null, cep = "", bairro = "", cidade = "", estado = "", pais = "")
+    val sandra = Cliente(nome= "Sandra", cpf = "222.222.222-22", senha = 2222, enderecoSandra, contatoSandra)
     println("depositando conta Sandra")
-    val contaSandra = ContaPoupanca("Sandra", 1001)
+    val contaSandra = ContaPoupanca(sandra, numero= 1001)
     println("saldo anterior ${contaSandra.saldo}")
     //contaSandra.saldo += 50.0
     contaSandra.deposita(50.0)

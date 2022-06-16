@@ -1,3 +1,5 @@
+package br.com.modelo
+
 abstract class FuncionarioAutenticavel(
     nome: String,
     cpf: String,
@@ -7,7 +9,7 @@ abstract class FuncionarioAutenticavel(
     nome = nome,
     cpf = cpf,
     salario = salario
-),Autenticavel{
+), Autenticavel {
 
     override fun autentica(senha: Int): Boolean{
         if (this.senha == senha){

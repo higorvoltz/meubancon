@@ -1,3 +1,8 @@
+import br.com.modelo.Analista
+import br.com.modelo.CalculadoraBonificacao
+import br.com.modelo.Diretor
+import br.com.modelo.Gerente
+
 fun testeFuncionario() {
     val higor = Analista(nome = "Higor", cpf = "111.111.111-11", salario = 5500.0)
     println("nome funcionario ${higor.nome}")

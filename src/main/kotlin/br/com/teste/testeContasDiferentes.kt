@@ -1,11 +1,19 @@
+import br.com.modelo.*
+
 fun testeContasDiferentes() {
+    val contatoHigor = Contato(telefoneFixo = "", telefoneCelular = "92222-2222", email = "mail@email.com")
+    val enderecoHigor = Endereco(logradouro = "rua Z", numero = 222, complemento = "", bairro = "", cep="", cidade = "", estado = "", pais = "")
+    val higor = Cliente(nome = "Higor", cpf = "111.111.111-11", senha = 1111, enderecoHigor, contatoHigor)
     val contaCorrente = ContaCorrente(
-        titular = "Higor",
+        titular = higor,
         numero = 1234
     )
 
+    val contatoHenrique = Contato(telefoneFixo = "", telefoneCelular = "92222-2227", email = "m@email.com")
+    val enderecoHenrique = Endereco(logradouro = "rua W", numero = 122, complemento = "", bairro = "", cep="", cidade = "", estado = "", pais = "")
+    val henrique = Cliente(nome = "Henrique", cpf = "222.222.222-22", senha = 2222, enderecoHenrique, contatoHenrique)
     val contaPoupanca = ContaPoupanca(
-        titular = "Henrique",
+        titular = henrique,
         numero = 4321
     )
 

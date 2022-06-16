@@ -1,5 +1,7 @@
+package br.com.modelo
+
 class ContaPoupanca(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : Conta(
     titular = titular,
@@ -10,5 +12,4 @@ class ContaPoupanca(
             this.saldo -= valor
         }
     }
-
 }

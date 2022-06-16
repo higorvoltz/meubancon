@@ -1,3 +1,5 @@
+import br.com.modelo.*
+
 fun testeAutenticacao() {
     val gerente = Gerente(
         nome = "Reginaldo",
@@ -14,7 +16,9 @@ fun testeAutenticacao() {
         plr = 5000.0
     )
 
-    val cliente = Cliente(nome = "Cliente", cpf = "555.555.555-55", senha = 11111)
+    val contato = Contato(telefoneFixo = "", telefoneCelular = "99999-9999", email = "email@email.com")
+    val endereco = Endereco(logradouro = "rua X", numero = 277, complemento = "", bairro = "Jd Y", cep = "00000-000", cidade = "São Paulo",estado = "SP", pais = "Brasil")
+    val cliente = Cliente(nome = "modelo.Cliente", cpf = "555.555.555-55", senha = 11111, endereco, contato)
 
 
     val sistema = SistemaInterno()

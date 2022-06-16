@@ -1,3 +1,5 @@
+package br.com.modelo
+
 class Analista(
     nome: String,
     cpf: String,
@@ -7,6 +9,14 @@ class Analista(
 
     override fun bonificacao(): Double {
         return salario * 0.2
+    }
+
+    override fun toString(): String {
+        return """
+nome: $nome
+cpf: $cpf
+salário:R$ $salario
+        """.trimIndent()
     }
 
 }

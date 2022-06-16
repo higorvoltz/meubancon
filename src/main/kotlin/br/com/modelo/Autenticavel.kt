@@ -1,3 +1,5 @@
+package br.com.modelo
+
 interface Autenticavel {
 
 

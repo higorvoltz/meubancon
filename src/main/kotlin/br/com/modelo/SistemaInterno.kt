@@ -1,10 +1,14 @@
+package br.com.modelo
+
+import br.com.modelo.Autenticavel
+
 class SistemaInterno {
 
-    /*fun entra(gerente: Gerente){
+    /*fun entra(gerente: modelo.Gerente){
 
     }
 
-    fun entra(diretor: Diretor){
+    fun entra(diretor: modelo.Diretor){
 
     }*/
     fun entra(funcionarioAutenticavel: Autenticavel, senha: Int){

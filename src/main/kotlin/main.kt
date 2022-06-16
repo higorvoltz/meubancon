@@ -1,3 +1,13 @@
+import br.com.modelo.*
+import br.com.teste.testeObjects
+import java.util.Objects
+
+
+fun imprime(valor: Any): Any {
+    println(valor)
+    return valor
+}
+
 fun main() {
     //testeLacos()
     //testeCondicoes(saldo)
@@ -5,13 +15,21 @@ fun main() {
     //testeCopiaRefeencia()
     //testeComportamentoFuncao()
     //testeFuncionario()
-    //testeContasDiferentes()
+    //testeAutenticacao()
+    //testeObjects()
 
-    testeAutenticacao()
+    val endereco = Endereco()
+    val enderecoNovo = Endereco()
+    println(endereco.equals(enderecoNovo))
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
 
+    println(endereco.toString())
+    println(enderecoNovo.toString())
 
 
 }
+
 
 
 

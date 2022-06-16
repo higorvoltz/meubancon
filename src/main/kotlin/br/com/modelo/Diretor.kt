@@ -1,3 +1,5 @@
+package br.com.modelo
+
 class Diretor(
     nome: String,
     cpf: String,
@@ -14,6 +16,16 @@ class Diretor(
 
     override fun bonificacao(): Double {
         return salario * 0.3 + plr
+    }
+
+    override fun toString(): String {
+        return """
+nome: $nome
+cpf: $cpf
+salário: R$ $salario
+PLR: R$ $plr
+bonificação: R$ ${bonificacao()}
+        """.trimIndent()
     }
 
 

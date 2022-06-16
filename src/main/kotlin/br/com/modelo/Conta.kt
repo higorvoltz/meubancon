@@ -1,19 +1,24 @@
+package br.com.modelo
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     val numero: Int
 ) {
     var saldo = 0.0
         protected set
-
-
+    companion object {
+        var total = 0
+            private set
+    }
+    init {
+        println("total de contas")
+        total++
+    }
     fun deposita(valor: Double) {
         if (valor > 0) {
             saldo += valor
         }
     }
-
     abstract fun saca(valor: Double)
-
     fun transfere(valor: Double, contaDestino: Conta): Boolean {
         if (saldo >= valor) {
             saldo -= valor
@@ -23,12 +28,5 @@ abstract class Conta(
         return false
     }
 
-    /* fun getSaldo(): Double{
-         return saldo
-     }
-
-     fun setSaldo(valor: Double){
-         saldo = valor
-     }*/
 
 }
