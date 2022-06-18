@@ -1,34 +1,54 @@
+import br.com.exception.SaldoInsuficienteException
 import br.com.modelo.*
+import br.com.teste.testeAny
+import br.com.teste.testeExpressao
 import br.com.teste.testeObjects
 import java.util.Objects
 
+fun funcao2() {
+    println("inicio funcao 2")
+    for (i in 1..5) {
+        println(i)
+    }
+    val endereco = Any()
+    try {
+        endereco as Endereco
+    } catch (e: SaldoInsuficienteException) {
+        println(e.printStackTrace())
+        throw SaldoInsuficienteException("Saldo insuficiente")
+    } catch (e: Exception) {
+        println("exception genérica capturada")
+    }
 
-fun imprime(valor: Any): Any {
-    println(valor)
-    return valor
+    println("fim função 2 ")
 }
 
+fun funcao1() {
+    println("inicio funcao 1")
+    funcao2()
+    println("fim funcao1")
+}
+
+
 fun main() {
-    //testeLacos()
     //testeCondicoes(saldo)
     println("meu banco")
     //testeCopiaRefeencia()
-    //testeComportamentoFuncao()
+    testeComportamentoFuncao()
     //testeFuncionario()
-    //testeAutenticacao()
+    testeAutenticacao()
     //testeObjects()
+    //testeAny()
+    //testeExpressao()
+    //funcao1()
 
-    val endereco = Endereco()
-    val enderecoNovo = Endereco()
-    println(endereco.equals(enderecoNovo))
-    println(endereco.hashCode())
-    println(enderecoNovo.hashCode())
-
-    println(endereco.toString())
-    println(enderecoNovo.toString())
 
 
 }
+
+
+
+
 
 
 

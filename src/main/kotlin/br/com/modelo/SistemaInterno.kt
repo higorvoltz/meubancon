@@ -1,5 +1,6 @@
 package br.com.modelo
 
+import br.com.exception.AcessoSistemaException
 import br.com.modelo.Autenticavel
 
 class SistemaInterno {
@@ -16,6 +17,7 @@ class SistemaInterno {
             println("bem vindo ao byte bank")
         } else {
             println("falha autenticacao")
+            throw AcessoSistemaException("senha incorreta")
         }
     }
 
