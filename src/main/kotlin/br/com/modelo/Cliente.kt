@@ -4,8 +4,8 @@ class Cliente(
     val nome: String,
     val cpf: String,
     private val senha: Int,
-    val endereco: Endereco,
-    var contato: Contato,
+    val endereco: Endereco?,
+    var contato: Contato?,
 ) : Autenticavel {
     override fun autentica(senha: Int): Boolean {
         when (this.senha) {

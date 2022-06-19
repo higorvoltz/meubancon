@@ -1,14 +1,14 @@
 package br.com.modelo
 
 class Endereco(
-    val logradouro: String = "",
-    val numero: Int = 0,
+    val logradouro: String? = "",
+    val numero: Int? = 0,
     val complemento: String? = "",
-    val bairro: String = "",
-    val cep: String = "",
-    val cidade: String = "",
-    val estado: String = "",
-    val pais: String = ""
+    val bairro: String? = "",
+    val cep: String? = "",
+    val cidade: String? = "",
+    val estado: String? = "",
+    val pais: String? = ""
 ) {
     override fun toString(): String {
         return """

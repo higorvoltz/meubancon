@@ -6,7 +6,7 @@ import java.util.*
 fun testeNullables() {
     var enderecoNulo: Endereco? = Endereco(logradouro = "Rua X")
     println(enderecoNulo?.logradouro?.length)
-    enderecoNulo?.let { println(it.logradouro.uppercase(Locale.getDefault())) }
+    enderecoNulo?.let { println(it.logradouro?.uppercase(Locale.getDefault())) }
 
     val a: String? = null
     val vouSair: Boolean = if (a == "sol") true else false
